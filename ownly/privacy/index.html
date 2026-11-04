@@ -11,18 +11,18 @@
 <main>
   <a class="brand" href="../"><img src="../logo.png" alt="">Ownly</a>
   <h1 style="margin-top:40px">Kebijakan Privasi</h1>
-  <p class="updated">Terakhir diperbarui: 3 November 2026</p>
+  <p class="updated">Terakhir diperbarui: 4 November 2026</p>
   <p>Ownly adalah aplikasi pencatat keuangan keluarga yang dikembangkan oleh Tim Ownly. Dokumen ini menjelaskan data apa yang diproses Ownly dan apa yang terjadi padanya. Kontak: <a href="mailto:ownly.dev.team@gmail.com">ownly.dev.team@gmail.com</a>.</p>
 
   <h2>Prinsip</h2>
   <p>Data keuanganmu milikmu. Tim Ownly tidak menjalankan server yang menyimpan catatanmu, tidak menjual data, dan tidak menampilkan iklan.</p>
 
   <h2>Data yang diproses</h2>
-  <p><strong>Catatan keuangan</strong> (transaksi, kategori, tabungan, pemakaian). Disimpan di HP-mu. Bila kamu mengaktifkan sinkron, salinannya juga disimpan di tempat yang kamu pilih: folder <strong>Ownly</strong> di Google Drive milikmu, atau spreadsheet keluarga lewat Google Apps Script yang dipasang keluargamu sendiri. Tim Ownly tidak dapat mengakses data ini. Bila PIN keluarga aktif, file sinkron di Drive dienkripsi.</p>
+  <p><strong>Catatan keuangan</strong> (transaksi, kategori, tabungan, pemakaian). Disimpan di HP-mu. Bila kamu mengaktifkan sinkron, salinannya juga disimpan di folder <strong>Ownly</strong> di Google Drive milikmu. Tim Ownly tidak dapat mengakses data ini. Bila PIN keluarga aktif, file sinkron di Drive dienkripsi.</p>
   <p><strong>Akun Google.</strong> Bila kamu masuk dengan Google, Ownly menerima nama, alamat email, dan foto profil Google untuk mengenali akunmu dan menautkan anggota keluarga. Nama dan email ikut tersimpan di folder keluarga supaya anggota lain mengenalimu.</p>
   <p><strong>Foto.</strong> Kamera dipakai untuk memotret struk dan foto profil, serta memindai kode QR undangan keluarga. Galeri dipakai bila kamu memilih foto sendiri. Foto profil disimpan di HP-mu.</p>
   <p><strong>Suara.</strong> Mikrofon dipakai bila kamu mencatat dengan suara. Pengenalan suara dijalankan oleh layanan suara di perangkat Android-mu, bukan oleh server Ownly.</p>
-  <p><strong>Teks struk.</strong> Tanpa penyedia AI, struk dibaca di dalam HP-mu.</p>
+  <p><strong>Teks struk.</strong> Secara bawaan, struk dibaca di dalam HP-mu. Bila OCR cloud opsional diaktifkan dengan kunci OCR.space atau NVIDIA, foto struk dikirim langsung ke layanan tersebut, termasuk ketika AI tidak aktif atau gagal membaca. Layanan itu memproses foto menurut kebijakan privasinya sendiri.</p>
   <p><strong>Undangan keluarga.</strong> Saat kamu mengundang seseorang, Ownly membagikan folder keluarga ke Gmail-nya lewat Google Drive, dan Google mengirim email kepadanya. Pesan atau kode QR undangan berisi Gmail itu, namamu, dan id file. Undangan dikirim lewat aplikasi yang kamu pilih dan tidak memberi akses bagi orang selain yang diundang.</p>
   <p><strong>Anak dengan HP sendiri.</strong> Orang tua dapat mengundang anak memakai Gmail anak. Anak tidak mendapat folder keluarga. Ia hanya mendapat file khusus yang dienkripsi dengan kunci tersendiri, berisi dompet Operasional, catatannya sendiri, dan uang yang dikirim kepadanya. Undangan anak berisi kunci itu, jadi sebaiknya ditunjukkan langsung lewat kode QR.</p>
   <p><strong>Notifikasi.</strong> Dipakai untuk pengingat yang kamu atur dan kabar catatan baru dari keluarga. Pemeriksaan latar belakang hanya membaca file keluargamu di Drive.</p>
@@ -37,20 +37,20 @@
     <li>Foto atau teks yang kamu kirim untuk dibaca AI dikirim langsung dari HP-mu ke penyedia itu. Penyedia memprosesnya menurut kebijakan privasi mereka sendiri.</li>
     <li>Kunci API disimpan di penyimpanan aman perangkat dan tidak dikirim ke Tim Ownly.</li>
     <li>Bila berbagi kunci dengan keluarga aktif, kunci ikut tersinkron ke anggota keluarga. Di mode Google Drive, ini hanya terjadi setelah PIN keluarga mengenkripsinya.</li>
-    <li>Tanpa kunci, tidak ada data yang dikirim ke penyedia AI.</li>
+    <li>Tanpa kunci AI pribadi atau keluarga yang aktif, tidak ada data yang dikirim ke penyedia AI. OCR cloud memakai pengaturan dan kunci terpisah; jika diaktifkan, foto dapat tetap dikirim ke OCR.space atau NVIDIA.</li>
   </ul>
 
   <h2>Berbagi data</h2>
-  <p>Data hanya berpindah ke: Google Drive atau spreadsheet milikmu dan keluargamu, anggota keluarga yang kamu tautkan, dan penyedia AI pilihanmu bila kamu mengaktifkannya. Di mode server keluarga, pengelola spreadsheet dapat melihat semua catatan.</p>
+  <p>Data hanya berpindah ke: Google Drive milikmu dan keluargamu, anggota keluarga yang kamu tautkan, penyedia AI pilihanmu bila kamu mengaktifkannya, dan layanan OCR cloud bila diaktifkan.</p>
 
   <h2>Penyimpanan dan penghapusan</h2>
-  <p>Data tersimpan di HP-mu sampai kamu menghapusnya atau mencopot aplikasi. Untuk menghapus data sinkron, hapus folder Ownly di Google Drive-mu atau spreadsheet keluarga. Salinan yang sudah masuk ke HP anggota keluarga lain tetap ada di HP mereka sampai dihapus. Untuk mencabut akses Ownly ke akun Google-mu, buka <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p>Data tersimpan di HP-mu sampai kamu menghapusnya atau mencopot aplikasi. Kamu bisa menghapus data dan akun di aplikasi lewat <strong>Profil › Hapus data</strong>. Pemilik folder keluarga dapat menghapus seluruh folder keluarga di Drive. Anggota lain dapat menghapus catatan Pribadi, nama, dan Gmail-nya dari keluarga; catatan di dompet Operasional tetap ada sebagai riwayat keluarga sampai pemilik folder menghapusnya. Salinan yang sudah masuk ke HP anggota keluarga lain tetap ada di HP mereka sampai dihapus. Rincian dan cara meminta bantuan ada di <a href="../hapus-data/">Hapus data dan akun</a>. Untuk mencabut akses Ownly ke akun Google-mu, buka <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 
   <h2>Keamanan</h2>
   <p>Komunikasi memakai HTTPS. File sinkron di Drive dienkripsi bila PIN keluarga aktif. Tidak ada sistem yang sepenuhnya bebas risiko, jadi jaga perangkat dan PIN-mu.</p>
 
   <h2>Anak-anak</h2>
-  <p>Ownly ditujukan untuk pengguna dewasa. Orang tua dapat mencatat dompet anak tanpa akun, atau mengundang anak dengan HP sendiri atas keputusan dan tanggung jawab orang tua. Catatan anak disimpan di Drive anak dan keluarganya, bukan di server Tim Ownly. Orang tua dapat mengeluarkan anak dari layar Keluarga kapan saja.</p>
+  <p>Ownly ditujukan untuk pengguna dewasa dan remaja usia 13–17 tahun. Remaja dengan HP dan akun Google sendiri bergabung melalui undangan orang tua untuk mencatat keuangannya sendiri dengan akses terbatas. Ownly tidak ditujukan bagi pengguna mandiri berusia di bawah 13 tahun; orang tua dapat mencatat dompet anak tanpa membuat akun untuk anak. Catatan remaja disimpan di Drive remaja dan keluarganya, bukan di server Tim Ownly. Remaja hanya dapat mengubah catatannya sendiri. Orang tua dapat mengeluarkan remaja dari layar Keluarga kapan saja, dan remaja dapat menghapus datanya sendiri lewat Profil › Hapus data. Penggunaan layanan Google, pengenalan suara, AI, dan OCR cloud mengikuti ketentuan usia serta izin yang berlaku pada masing-masing layanan.</p>
 
   <h2>Perubahan</h2>
   <p>Bila kebijakan ini berubah, tanggal di atas diperbarui dan perubahan penting diumumkan di aplikasi atau halaman toko.</p>
@@ -59,7 +59,7 @@
   <p>Tim Ownly · <a href="mailto:ownly.dev.team@gmail.com">ownly.dev.team@gmail.com</a></p>
 </main>
 <footer>
-  <a href="../">Beranda</a><a href="../terms/">Ketentuan Layanan</a>
+  <a href="../">Beranda</a><a href="../terms/">Ketentuan Layanan</a><a href="../hapus-data/">Hapus data</a>
 </footer>
 </body>
 </html>
